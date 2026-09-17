@@ -428,6 +428,21 @@ p { margin: 0 0 16px; color: var(--color-text-muted); }
 
 .img-placeholder.card-img { aspect-ratio: 4 / 3; border-radius: var(--radius-md) var(--radius-md) 0 0; }
 
+.img-placeholder.has-photo {
+  background: var(--color-bg-alt);
+  padding: 12px;
+}
+
+.img-placeholder.has-photo::before { display: none; }
+
+.img-placeholder.has-photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* ---------- Logos / marquee ---------- */
 
 .marquee {
