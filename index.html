@@ -9,16 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand__mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 20.5 10.5a4.95 4.95 0 0 0-7-7L3.5 13.5a4.95 4.95 0 0 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
-      </span>
-      <span>Pharma Solutions<em>Uruguay</em></span>
+    <a href="index.html" class="brand brand--logo" aria-label="Pharma Solutions Uruguay - Inicio">
+      <img src="assets/img/logo.png" alt="Pharma Solutions" width="192" height="48">
     </a>
     <nav class="nav">
       <ul class="nav__links">
@@ -38,52 +36,42 @@
 
 <main>
 
-  <section class="hero">
+  <section class="hero hero--photo">
+    <div class="hero__media" aria-hidden="true">
+      <img src="assets/img/hero-farmaceutica.jpg" alt="">
+    </div>
     <div class="container">
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow" style="color:#7fe6cf">Equipamiento e insumos farmacéuticos</div>
-          <h1>Tecnología y soluciones para la industria farmacéutica</h1>
-          <p class="lead">En Pharma Solutions acompañamos a laboratorios y plantas de producción con equipamiento de calidad, asesoramiento técnico y servicio postventa en todo el proceso productivo.</p>
-          <div class="hero-actions">
-            <a href="productos.html" class="btn btn--primary">Ver catálogo de productos</a>
-            <a href="contacto.html" class="btn btn--outline">Hablar con un asesor</a>
-          </div>
-          <div class="hero-stats">
-            <div><strong>17</strong><span>Equipos en catálogo</span></div>
-            <div><strong>4</strong><span>Etapas del proceso</span></div>
-            <div><strong>UY</strong><span>Cobertura nacional</span></div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="img-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
-            <span>Imagen de equipo<br>próximamente</span>
-          </div>
+      <div class="hero__content">
+        <h1><span class="hero__highlight">Tecnología y soluciones</span> para la industria farmacéutica</h1>
+        <p class="lead">Acompañamos a laboratorios y plantas de producción con equipamiento, asesoramiento técnico y servicio postventa.</p>
+        <div class="hero-actions">
+          <a href="productos.html" class="btn btn--primary">Ver soluciones
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+          <a href="contacto.html" class="btn btn--outline">Hablar con un asesor</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="marquee">
+  <section class="trust-strip">
     <div class="container">
       <p>Trabajamos con estándares de calidad para plantas farmacéuticas</p>
-      <div class="marquee-row">
-        <span>Producción</span>
-        <span>Envasado</span>
-        <span>Control de calidad</span>
-        <span>Mantenimiento</span>
-        <span>Capacitación</span>
-      </div>
+      <ul class="trust-strip__list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg><span>Producción</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5Z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg><span>Envasado</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Control de calidad</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg><span>Mantenimiento</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Capacitación</span></li>
+      </ul>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="about-split">
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V9l6-5 6 5v12"/><path d="M10 21v-6h4v6"/></svg>
-          <span>Foto institucional<br>próximamente</span>
+        <div class="about-photo">
+          <img src="assets/img/institucional.jpg" alt="Planta de producción farmacéutica con compresora de comprimidos" loading="lazy">
         </div>
         <div>
           <div class="eyebrow">Quiénes somos</div>
@@ -233,9 +221,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <span class="brand__mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 20.5 10.5a4.95 4.95 0 0 0-7-7L3.5 13.5a4.95 4.95 0 0 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
-          </span>
+          <span class="brand__mark brand__mark--logo"><img src="assets/img/logo-mark.png" alt=""></span>
           <span>Pharma Solutions</span>
         </a>
         <p>Equipamiento, tecnología y servicios técnicos para la industria farmacéutica.</p>

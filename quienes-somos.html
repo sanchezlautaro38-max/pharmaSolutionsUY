@@ -9,16 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand__mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 20.5 10.5a4.95 4.95 0 0 0-7-7L3.5 13.5a4.95 4.95 0 0 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
-      </span>
-      <span>Pharma Solutions<em>Uruguay</em></span>
+    <a href="index.html" class="brand brand--logo" aria-label="Pharma Solutions Uruguay - Inicio">
+      <img src="assets/img/logo.png" alt="Pharma Solutions" width="192" height="48">
     </a>
     <nav class="nav">
       <ul class="nav__links">
@@ -48,17 +46,50 @@
 
   <section class="section">
     <div class="container">
-      <div class="about-split">
-        <div class="img-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <span>Foto del equipo<br>próximamente</span>
-        </div>
+      <div class="about-company">
         <div>
           <div class="eyebrow">Nuestra empresa</div>
           <h2>Pharma Solutions</h2>
           <p>Pharma Solutions es una empresa dedicada a proveer equipamiento y soluciones para la industria farmacéutica en Uruguay. Trabajamos junto a laboratorios y plantas de producción para acompañar cada etapa del proceso, desde la selección del equipo adecuado hasta su instalación, puesta en marcha y mantenimiento.</p>
           <p>Nuestro enfoque combina productos de calidad con un servicio técnico cercano, entendiendo que cada planta tiene necesidades particulares que requieren soluciones a medida.</p>
+          <a href="productos.html" class="link-arrow">Ver catálogo de equipos
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
         </div>
+        <aside class="process-card">
+          <span class="process-card__mark"><img src="assets/img/logo-mark.png" alt=""></span>
+          <h3>Acompañamos las 4 etapas del proceso productivo</h3>
+          <ol class="process-steps">
+            <li>
+              <a href="productos.html#preparacion">
+                <span class="process-steps__num">01</span>
+                <span class="process-steps__text"><strong>Preparación de polvos</strong><small>Granulación húmeda y seca, molienda y calibrado</small></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="productos.html#procesamiento">
+                <span class="process-steps__num">02</span>
+                <span class="process-steps__text"><strong>Procesamiento de sólidos</strong><small>Compresión, encapsulado, recubrimiento y lecho fluido</small></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="productos.html#acondicionamiento">
+                <span class="process-steps__num">03</span>
+                <span class="process-steps__text"><strong>Acondicionamiento / Envasado</strong><small>Blisteado y encartonado del producto terminado</small></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="productos.html#calidad">
+                <span class="process-steps__num">04</span>
+                <span class="process-steps__text"><strong>Control de calidad</strong><small>Equipos de control en proceso (IPC)</small></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </li>
+          </ol>
+        </aside>
       </div>
     </div>
   </section>
@@ -136,9 +167,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <span class="brand__mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 20.5 10.5a4.95 4.95 0 0 0-7-7L3.5 13.5a4.95 4.95 0 0 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
-          </span>
+          <span class="brand__mark brand__mark--logo"><img src="assets/img/logo-mark.png" alt=""></span>
           <span>Pharma Solutions</span>
         </a>
         <p>Equipamiento, tecnología y servicios técnicos para la industria farmacéutica.</p>
